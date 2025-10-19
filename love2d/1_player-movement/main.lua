@@ -3,6 +3,7 @@ function love.load()
     player.x = 400
     player.y = 200
     player.speed = 5
+    player.size = 100
 end
 
 function love.update(dt)
@@ -24,5 +25,5 @@ function love.update(dt)
 end
 
 function love.draw()
-    love.graphics.circle("fill", player.x, player.y, 100)
+    love.graphics.circle("fill", player.x, player.y, player.size)
 end
